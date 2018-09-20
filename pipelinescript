@@ -1,4 +1,2 @@
-node {
-  stage 'Run JMeter Test'
-  sh '/home/ubuntu/apache-jmeter-3.1/bin/jmeter.sh -n -t /home/ubuntu/Jenkins_demo1.jmx -Jusers 2 -l test.jtl'
-}
+set JMETER_HOME=G:\apache-jmeter-4.0
+G:\apache-jmeter-4.0\bin\jmeter.bat -Jjmeter.save.saveservice.output_format=xml -n -t G:\apache-jmeter-4.0\bin\Test.jmx -l G:\apache-jmeter-4.0\bin\Test.jtl

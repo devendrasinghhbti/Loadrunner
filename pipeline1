@@ -2,6 +2,7 @@ node {
   stage ('Run JMeter Test')
   {
    // some block test
+   //
 }
 sh 'G:/apache-jmeter-4.0/bin/jmeter.sh -n -t G:/apache-jmeter-4.0/bin/Test.jmx -l G:/apache-jmeter-4.0/bin/test.jtl'
 }
